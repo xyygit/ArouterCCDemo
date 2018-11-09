@@ -4,4 +4,8 @@
     <string name="catagory">分类</string>
     <string name="cart">购物车</string>
     <string name="mine">我的</string>
+    <string name="title_test">普通跳转测试</string>
+    <string name="title_forresult">ForResult测试</string>
+    <string name="title_param_test">携参跳转</string>
+    <string name="title_test_login">登录拦截器测试</string>
 </resources>

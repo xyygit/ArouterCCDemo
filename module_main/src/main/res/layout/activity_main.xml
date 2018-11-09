@@ -1,35 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
     tools:context=".activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
         android:orientation="vertical">
 
-        <FrameLayout
-            android:id="@+id/realtabcontent"
-            android:layout_width="fill_parent"
-            android:layout_height="0dip"
-            android:layout_weight="1" />
-
-        <View
+        <Button
+            android:id="@+id/btn_1"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/size_0.5dp"
-            android:background="@color/color_dedede"/>
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:text="简单应用内跳转"
+            android:onClick="onClick"/>
 
-        <android.support.v4.app.FragmentTabHost
-            android:id="@android:id/tabhost"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="0" />
-        </android.support.v4.app.FragmentTabHost>
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:text="跳转FORRESULT"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:onClick="onClick"
+            android:text="fragment获取测试"/>
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:onClick="onClick"
+            android:text="携参数应用内跳转"/>
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:onClick="onClick"
+            android:text="跳转动画"/>
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:onClick="onClick"
+            android:text="通过url跳转"/>
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:onClick="onClick"
+            android:text="拦截器测试"/>
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:onClick="onClick"
+            android:text="依赖注入测试"/>
+
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</ScrollView>

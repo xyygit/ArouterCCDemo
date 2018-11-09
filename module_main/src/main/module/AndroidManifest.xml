@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.test.TestActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.test.ForResultActivity" />
+        <activity android:name=".activity.test.TestParamActivity" />
+        <activity android:name=".activity.test.TestLoginActivity" />
     </application>
 
 </manifest>

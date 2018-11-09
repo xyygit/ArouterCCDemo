@@ -1,4 +1,4 @@
-package yann.module_main.fragment;
+package com.yann.module.usercenter.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,9 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import yann.module.base.BaseFragment;
-import yann.module_main.R;
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.yann.module.usercenter.R;
 
+import yann.module.base.BaseFragment;
+import yann.module.utils.RouteUtils;
+
+/**
+ * Created by yayun.xia on 2018/11/9
+ */
+
+@Route(path = RouteUtils.CENTER_FRAGMENT_MAIN)
 public class CenterFragment extends BaseFragment {
     private final static String TAG = CenterFragment.class.getSimpleName();
 
@@ -35,9 +43,9 @@ public class CenterFragment extends BaseFragment {
         Bundle arg = getArguments();
         if(arg != null){
             String content = arg.getString("content");
-            Log.d(TAG, content);
+            Log.d(TAG, "content:"+content);
         }
 
-        return inflater.inflate(R.layout.fragment_main_user_center, container, false);
+        return inflater.inflate(R.layout.fragment_user_center, container, false);
     }
 }

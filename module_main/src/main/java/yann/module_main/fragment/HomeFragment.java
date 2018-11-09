@@ -8,9 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
 import yann.module.base.BaseFragment;
+import yann.module.utils.RouteUtils;
 import yann.module_main.R;
 
+@Route(path = RouteUtils.HOME_FRAGMENT_MAIN)
 public class HomeFragment extends BaseFragment {
     private final static String TAG = HomeFragment.class.getSimpleName();
 
@@ -35,7 +39,7 @@ public class HomeFragment extends BaseFragment {
         Bundle arg = getArguments();
         if(arg != null){
             String content = arg.getString("content");
-            Log.d(TAG, content);
+            Log.d(TAG, "content:"+content);
         }
         return inflater.inflate(R.layout.fragment_main_home, container, false);
     }
